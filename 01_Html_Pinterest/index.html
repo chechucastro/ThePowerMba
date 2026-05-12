@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre ideas en imágenes: recetas, decoración, moda y más. Galería tipo Pinterest para inspirarte y guardar tus favoritos.">
+    <meta name="keywords" content="ideas, imágenes, inspiración, recetas, decoración, moda, galería, pins">
+    <link rel="canonical" href="https://example.com/pinterest-practica/">
+    <title>Pinterest práctica — Ideas e inspiración en imágenes</title>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Pinterest práctica</a></h1>
+        <!-- Navegación principal -->
+        <nav aria-label="Principal">
+            <ul>
+                <li><a href="/inicio" aria-current="page">Inicio</a></li>
+                <li><a href="/explorar">Explorar</a></li>
+                <li>
+                    <button type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menu-crear" id="btn-crear">
+                        Crear
+                    </button>
+                    <span id="menu-crear" hidden>Submenú Crear (pendiente de implementar)</span>
+                </li>
+            </ul>
+        </nav>
+        <!-- Formulario de búsqueda -->
+        <form role="search" action="/buscar" method="get">
+            <label for="busqueda-global">Buscar en el sitio</label>
+            <input type="search" id="busqueda-global" name="q" placeholder="Buscar" autocomplete="off">
+            <button type="submit">Buscar</button>
+        </form>
+        <!-- Navegación de cuenta y notificaciones -->
+        <nav aria-label="Cuenta y notificaciones">
+            <ul>
+                <li><a href="/notificaciones">Notificaciones</a></li>
+                <li><a href="/mensajes">Mensajes</a></li>
+                <li>
+                    <a href="/perfil/mi-cuenta">
+                        <img src="https://picsum.photos/id/64/96/96" alt="Foto de perfil de la cuenta de usuario" width="96" height="96" loading="lazy">
+                    </a>
+                </li>
+                <li>
+                    <button type="button" aria-haspopup="true" aria-expanded="false" aria-label="Abrir menú de cuenta">
+                        Menú de cuenta
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        
+        <section aria-labelledby="titulo-pins">
+            <h2 id="titulo-pins">Pins recomendados</h2>
+            <!-- Artículo 1 -->
+            <article>
+                <h3><a href="/pin/recetas-tacos-caseros">Tacos caseros con salsa verde</a></h3>
+                <a href="/pin/recetas-tacos-caseros">
+                    <img src="https://picsum.photos/id/292/400/600" alt="Plato con tacos, limas y hierbas frescas sobre una mesa de madera" width="400" height="600" loading="lazy">
+                </a>
+                <p><time datetime="PT16S">0:16</time> · vídeo corto</p>
+            </article>
+            <!-- Artículo 2 -->
+            <article>
+                <h3><a href="/pin/decoracion-salon-minimalista">Salón minimalista con luz natural</a></h3>
+                <a href="/pin/decoracion-salon-minimalista">
+                    <img src="https://picsum.photos/id/625/400/500" alt="Salón amplio con sofá claro, plantas y ventanales" width="400" height="500" loading="lazy">
+                </a>
+            </article>
+
+            <!-- Artículo 3 --> 
+            <article>
+                <h3><a href="/pin/paisaje-montana-nevada">Paisaje de montaña nevada al amanecer</a></h3>
+                <a href="/pin/paisaje-montana-nevada">
+                    <img src="https://picsum.photos/id/1036/400/700" alt="Cumbres nevadas iluminadas por la luz del amanecer" width="400" height="700" loading="lazy">
+                </a>
+            </article>
+
+            <!-- Artículo 4 -->
+            <article>
+                <h3><a href="/pin/diseno-tipografia-cartel">Cartel con tipografía expresiva</a></h3>
+                <a href="/pin/diseno-tipografia-cartel">
+                    <img src="https://picsum.photos/id/180/400/400" alt="Detalle de letras y formas geométricas en un diseño gráfico" width="400" height="400" loading="lazy">
+                </a>
+            </article>
+            <!-- Artículo 5 -->
+            <article>
+                <h3><a href="/pin/cafe-y-pasteleria">Café recién hecho con pastelería</a></h3>
+                <a href="/pin/cafe-y-pasteleria">
+                    <img src="https://picsum.photos/id/431/400/550" alt="Taza de café humeante junto a cruasanes en un plato" width="400" height="550" loading="lazy">
+                </a>
+                <p><time datetime="PT42S">0:42</time> · vídeo corto</p>
+            </article>
+            <!-- Artículo 6 -->
+            <article>
+                <h3><a href="/pin/jardin-urbano-terrazas">Jardín urbano en terraza con macetas</a></h3>
+                <a href="/pin/jardin-urbano-terrazas">
+                    <img src="https://picsum.photos/id/306/400/480" alt="Terraza con plantas en macetas de distintos tamaños" width="400" height="480" loading="lazy">
+                </a>
+            </article>
+            <!-- Artículo 7 -->
+            <article>
+                <h3><a href="/pin/ilustracion-ciudad-nocturna">Ilustración de ciudad nocturna con neón</a></h3>
+                <a href="/pin/ilustracion-ciudad-nocturna">
+                    <img src="https://picsum.photos/id/348/400/520" alt="Escena urbana nocturna con reflejos de luces de neón" width="400" height="520" loading="lazy">
+                </a>
+            </article>
+            <!-- Artículo 8 -->
+            <article>
+                <h3><a href="/pin/outfit-casual-otono">Outfit casual de otoño con abrigo</a></h3>
+                <a href="/pin/outfit-casual-otono">
+                    <img src="https://picsum.photos/id/338/400/640" alt="Persona con abrigo y bufanda en ambiente urbano otoñal" width="400" height="640" loading="lazy">
+                </a>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <!-- Navegación del footer -->
+        <nav aria-label="Pie de página">
+            <ul>
+                <li><a href="/privacidad">Privacidad</a></li>
+                <li><a href="/condiciones">Condiciones</a></li>
+                <li><a href="/ayuda">Centro de ayuda</a></li>
+            </ul>
+        </nav>
+        <p><small>© 2026 Pinterest práctica — Ejercicio de estructura HTML</small></p>
+    </footer>
+</body>
+</html>
