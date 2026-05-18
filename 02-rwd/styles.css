@@ -42,8 +42,9 @@ aside ul {
 }
 section.features {
     position: relative;
-    margin: 25%;
+    margin-top: 100px;
     text-align: center;
+    max-height: 300px;
 }
 footer {
     position: absolute;
