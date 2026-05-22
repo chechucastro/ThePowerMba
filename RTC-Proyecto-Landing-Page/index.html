@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+    <!-- Document metadata and stylesheets -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mercedes-Benz models, dealers, features, and the new Mercedes CLS. Explore electric and hybrid vehicles.">
+    <title>Mercedes-Benz | RTC Landing Page</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+</head>
+<body>
+
+  <!-- Accessibility: skip navigation for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Site header: logo, main nav, account/cart/menu icons -->
+  <header class="site-header">
+
+    <!-- Brand logo (home link) -->
+    <a class="logo-container" href="#top" aria-label="Mercedes-Benz, home">
+      <img src="./assets/images/icons/mercedes-logo.svg" alt="" width="40" height="40" decoding="async">
+    </a>
+
+    <!-- Primary navigation (hidden on mobile, visible from 901px) -->
+    <nav id="main-nav" class="site-header__nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#products">Electric</a></li>
+        <li><a href="#products">Maybach</a></li>
+        <li><a href="#features">Accessories</a></li>
+        <li><a href="#dealers">Stores</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header utilities: account, basket, mobile menu toggle -->
+    <div class="logged-area">
+      <button type="button" class="user-container" aria-label="Account">
+        <img src="./assets/images/icons/login.svg" alt="" width="24" height="24" decoding="async" aria-hidden="true">
+      </button>
+      <button type="button" class="cart-container" aria-label="Shopping basket">
+        <img src="./assets/images/icons/basket.svg" alt="" width="24" height="24" decoding="async" aria-hidden="true">
+      </button>
+      <button
+        class="header-menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <img src="./assets/images/icons/burguer-menu.svg" alt="" width="24" height="24" decoding="async" aria-hidden="true">
+      </button>
+    </div>
+  </header>
+
+  <!-- Main page content -->
+  <main id="main-content">
+
+    <!-- Hero: full-width image with headline overlay -->
+    <section class="hero layout-container--bleed" aria-labelledby="hero-heading">
+      <img
+        class="hero__image"
+        src="./assets/images/cars/hero-white-card.jpg"
+        alt=""
+        width="1920"
+        height="1080"
+        decoding="async"
+        fetchpriority="high"
+        aria-hidden="true"
+      >
+      <div class="hero-content">
+        <h1 id="hero-heading">The new Mercedes CLS</h1>
+        <p class="hero__tagline">The power in your hands</p>
+      </div>
+    </section>
+
+    <!-- Products: vehicle model cards in a horizontal scroll grid -->
+    <section id="products" class="products" aria-labelledby="products-heading">
+      <div class="layout-container">
+        <h2 id="products-heading" class="visually-hidden">Vehicle models</h2>
+        <div class="products__grid" role="region" aria-label="Vehicle models carousel" tabindex="0">
+
+          <!-- Product card: EQE Sedan -->
+          <article class="product-card">
+            <header class="product-card__header">
+              <p class="product-card__category">Electric</p>
+              <h3>EQE Sedan</h3>
+            </header>
+            <img
+              class="product-card__image"
+              src="./assets/images/cars/450-cabriolet.png"
+              alt="Mercedes EQE Sedan"
+              width="560"
+              height="315"
+              loading="lazy"
+              decoding="async"
+            >
+            <footer class="product-card__footer">
+              <button type="button" aria-label="View details for EQE Sedan">Details</button>
+              <div class="product-card__colors" role="radiogroup" aria-label="Available colors for EQE Sedan">
+                <button type="button" class="product-card__color product-card__color--black" role="radio" aria-checked="true" aria-label="Obsidian black"></button>
+                <button type="button" class="product-card__color product-card__color--silver" role="radio" aria-checked="false" aria-label="Iridium silver"></button>
+                <button type="button" class="product-card__color product-card__color--white" role="radio" aria-checked="false" aria-label="Polar white"></button>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Product card: GLC SUV -->
+          <article class="product-card">
+            <header class="product-card__header">
+              <p class="product-card__category">Hybrid</p>
+              <h3>GLC SUV</h3>
+            </header>
+            <img
+              class="product-card__image"
+              src="./assets/images/cars/g-class.png"
+              alt="Mercedes GLC SUV"
+              width="560"
+              height="315"
+              loading="lazy"
+              decoding="async"
+            >
+            <footer class="product-card__footer">
+              <button type="button" aria-label="View details for GLC SUV">Details</button>
+              <div class="product-card__colors" role="radiogroup" aria-label="Available colors for GLC SUV">
+                <button type="button" class="product-card__color product-card__color--black" role="radio" aria-checked="true" aria-label="Obsidian black"></button>
+                <button type="button" class="product-card__color product-card__color--silver" role="radio" aria-checked="false" aria-label="Iridium silver"></button>
+                <button type="button" class="product-card__color product-card__color--white" role="radio" aria-checked="false" aria-label="Polar white"></button>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Product card: EQS SUV -->
+          <article class="product-card">
+            <header class="product-card__header">
+              <p class="product-card__category">Electric</p>
+              <h3>EQS SUV</h3>
+            </header>
+            <img
+              class="product-card__image"
+              src="./assets/images/cars/glc-suv-electric.png"
+              alt="Mercedes EQS SUV Electric"
+              width="560"
+              height="315"
+              loading="lazy"
+              decoding="async"
+            >
+            <footer class="product-card__footer">
+              <button type="button" aria-label="View details for EQS SUV">Details</button>
+              <div class="product-card__colors" role="radiogroup" aria-label="Available colors for EQS SUV">
+                <button type="button" class="product-card__color product-card__color--black" role="radio" aria-checked="true" aria-label="Obsidian black"></button>
+                <button type="button" class="product-card__color product-card__color--silver" role="radio" aria-checked="false" aria-label="Iridium silver"></button>
+                <button type="button" class="product-card__color product-card__color--white" role="radio" aria-checked="false" aria-label="Polar white"></button>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Product card: 450 Cabriolet -->
+          <article class="product-card">
+            <header class="product-card__header">
+              <p class="product-card__category">Hybrid</p>
+              <h3>450 Cabriolet</h3>
+            </header>
+            <img
+              class="product-card__image"
+              src="./assets/images/cars/glc-suv.png"
+              alt="Mercedes 450 Cabriolet"
+              width="560"
+              height="315"
+              loading="lazy"
+              decoding="async"
+            >
+            <footer class="product-card__footer">
+              <button type="button" aria-label="View details for 450 Cabriolet">Details</button>
+              <div class="product-card__colors" role="radiogroup" aria-label="Available colors for 450 Cabriolet">
+                <button type="button" class="product-card__color product-card__color--black" role="radio" aria-checked="true" aria-label="Obsidian black"></button>
+                <button type="button" class="product-card__color product-card__color--silver" role="radio" aria-checked="false" aria-label="Iridium silver"></button>
+                <button type="button" class="product-card__color product-card__color--white" role="radio" aria-checked="false" aria-label="Polar white"></button>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dealers: introductory text block -->
+    <section id="dealers" class="dealers" aria-labelledby="dealers-heading">
+      <div class="layout-container">
+        <div class="dealers__content">
+          <h2 id="dealers-heading">Find your nearest Mercedes dealer you.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Discover the model that fits your lifestyle.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map banner: Earth background with dealer CTA panel -->
+    <section class="map-banner layout-container--bleed" aria-labelledby="map-banner-heading">
+      <img
+        class="map-banner__bg"
+        src="./assets/images/bg/bg-earth.png"
+        alt=""
+        width="1920"
+        height="1080"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+      >
+      <div class="map-banner__panel">
+        <h2 id="map-banner-heading">Discover your local Mercedes partner store</h2>
+        <button type="button">Find a dealer</button>
+      </div>
+    </section>
+
+    <!-- Features carousel: Comfort, Technology, Accessories -->
+    <section id="features" class="carousel" aria-labelledby="features-heading">
+      <div class="layout-container">
+        <h2 id="features-heading" class="visually-hidden">Features</h2>
+        <div class="features__grid" role="region" aria-label="Feature highlights" tabindex="0">
+
+          <!-- Feature card: Comfort -->
+          <article class="feature-card" aria-labelledby="feature-comfort-title">
+            <h3 id="feature-comfort-title">Comfort</h3>
+            <img
+              class="feature-card__image"
+              src="./assets/images/cars/confort.png"
+              alt="Mercedes interior comfort features"
+              width="540"
+              height="360"
+              loading="lazy"
+              decoding="async"
+            >
+            <button type="button" aria-label="View comfort details">Details</button>
+          </article>
+
+          <!-- Feature card: Technology -->
+          <article class="feature-card" aria-labelledby="feature-technology-title">
+            <h3 id="feature-technology-title">Technology</h3>
+            <img
+              class="feature-card__image"
+              src="./assets/images/cars/technology.png"
+              alt="Mercedes technology and headlights"
+              width="540"
+              height="360"
+              loading="lazy"
+              decoding="async"
+            >
+            <button type="button" aria-label="View technology details">Details</button>
+          </article>
+
+          <!-- Feature card: Accessories -->
+          <article class="feature-card" aria-labelledby="feature-accessories-title">
+            <h3 id="feature-accessories-title">Accessories</h3>
+            <img
+              class="feature-card__image"
+              src="./assets/images/cars/accesories.jpg"
+              alt="Mercedes accessories"
+              width="540"
+              height="360"
+              loading="lazy"
+              decoding="async"
+            >
+            <button type="button" aria-label="View accessories details">Details</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Temptation: red car promotional banner -->
+    <section class="tentation layout-container--bleed" aria-labelledby="tentation-heading">
+      <img
+        class="tentation__bg"
+        src="./assets/images/bg/bg-red-tentation.png"
+        alt=""
+        width="1920"
+        height="1080"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+      >
+      <div class="tentation__content">
+        <h2 id="tentation-heading">Red as temptation</h2>
+        <p>Good design is what drives us, and we're proud to share that Mercedes-Maybach has already won the prestigious Best Design Award 2023, as judged by the world's best product designers.</p>
+      </div>
+    </section>
+
+    <!-- Wheel programme: split layout (copy + image) -->
+    <section class="wheel-program layout-container--bleed" aria-labelledby="wheel-program-heading">
+      <div class="wheel-program__copy">
+        <h2 id="wheel-program-heading">The Mercedes-Maybach wheel programme</h2>
+        <p>The exclusive Mercedes-Maybach wheel programme, e.g. with optional 53.3 cm (21") Maybach forged wheels in multi-spoke design.</p>
+        <a href="#features">Learn more<span class="visually-hidden"> about the wheel programme</span></a>
+      </div>
+      <div class="wheel-program__media">
+        <img
+          src="./assets/images/bg/bg-wheel-program.png"
+          alt="Close-up of a Mercedes-Maybach wheel"
+          width="800"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+    </section>
+
+    <!-- Contact CTA bar -->
+    <section class="contact layout-container--bleed" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="visually-hidden">Stay in touch</h2>
+      <p>Ready to own the car of your dreams? Mercedes-Maybach are now available at our dealers by appointment only.</p>
+      <button type="button">Sign up now</button>
+    </section>
+  </main>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+
+    <!-- Newsletter: email input with inline subscribe button -->
+    <form class="site-footer__newsletter" action="#" method="post" aria-labelledby="newsletter-heading">
+      <h2 id="newsletter-heading" class="visually-hidden">Newsletter subscription</h2>
+      <label class="visually-hidden" for="newsletter-email">Email address</label>
+      <input
+        id="newsletter-email"
+        type="email"
+        name="email"
+        placeholder="Your email"
+        autocomplete="email"
+        required
+      >
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <!-- Social media links -->
+    <ul class="site-footer__social" aria-label="Social media">
+      <li>
+        <a href="#" aria-label="Facebook">
+          <img src="./assets/images/icons/facebook.svg" alt="" width="24" height="24" decoding="async" aria-hidden="true">
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="Instagram">
+          <img src="./assets/images/icons/instagram.png" alt="" width="24" height="24" decoding="async" aria-hidden="true">
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="YouTube">
+          <img src="./assets/images/icons/youtube.svg" alt="" width="24" height="24" decoding="async" aria-hidden="true">
+        </a>
+      </li>
+    </ul>
+
+    <!-- Footer navigation columns -->
+    <nav class="site-footer__links" aria-label="Footer">
+      <div class="site-footer__column">
+        <h3 id="footer-explore">Explore</h3>
+        <ul aria-labelledby="footer-explore">
+          <li><a href="#products">Models</a></li>
+          <li><a href="#products">Configure</a></li>
+          <li><a href="#products">Inventory</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__column">
+        <h3 id="footer-about">About</h3>
+        <ul aria-labelledby="footer-about">
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__column">
+        <h3 id="footer-help">Help</h3>
+        <ul aria-labelledby="footer-help">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Legal</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Copyright and back-to-top link -->
+    <div class="site-footer__bottom">
+      <p><small>© Mercedes-Benz. All rights reserved.</small></p>
+      <a class="site-footer__back-to-top" href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
