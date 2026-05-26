@@ -86,7 +86,8 @@ a {
 }
 
 /* Global Button - Puede ser como un boton "primario" */
-button {
+button,
+.button-link {
     cursor: pointer;
     border: none;
     border-radius: 999px;
@@ -96,6 +97,13 @@ button {
     color: var(--primary-color);
     border-radius: var(--border-radius);
     max-width: fit-content;
+    display: inline-block;
+    text-align: center;
+}
+
+.button-link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
 }
 
 .site-footer a {
@@ -172,7 +180,8 @@ header {
     min-width: 0;
 }
 
-.logged-area > button {
+.logged-area > button,
+.logged-area > a {
     flex-shrink: 0;
     display: grid;
     place-items: center;
@@ -182,7 +191,8 @@ header {
     max-width: none;
 }
 
-.logged-area > button img {
+.logged-area > button img,
+.logged-area > a img {
     width: 24px;
     height: 24px;
     min-width: 24px;
