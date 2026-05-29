@@ -62,21 +62,3 @@ const streamers1Legends = streamers1.filter(streamer => streamer.gameMorePlayed.
 console.log(`Streamers 1 having Legends: ${streamers1Legends.map(streamer => streamer.name)}`);
 
 
-/*
-Dado el siguiente javascript, utiliza .filter() para mostrar por consola 
-los streamers que incluyan la palabra introducida en el input. De esta forma, si 
-introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si
-introduzco 'i', me deberia de mostrar el streamer 'Rubius' e 'Ibai'.
-
-*/
-
-if (typeof document !== 'undefined') {
-	const toFilterStreamers = document.querySelector('[data-function="toFilterStreamers"]');
-	if (toFilterStreamers) {
-		toFilterStreamers.addEventListener('input', (event) => {
-			const value = event.target.value.toLowerCase();
-			const filtered = streamers1.filter(streamer => streamer.name.toLowerCase().includes(value));
-			console.log(`Streamers: ${filtered.map(streamer => streamer.name)}`);
-		});
-	}
-}
